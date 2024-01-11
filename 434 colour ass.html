@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Box Color</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #colorBox {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+<button id="colorButton">Touch To Change</button>
+
+<script>
+  $(document).ready(function(){
+    $("#colorButton").click(function(){
+      var randomColor = Math.floor(Math.random()*16777215).toString(16);
+      $("#colorBox").css("background-color", "#" + randomColor);
+    });
+  });
+</script>
+
+</body>
+</html>
