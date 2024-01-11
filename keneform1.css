@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./Img/AnyConv.com__download.jpg);
+    background-size: cover;
+}
+div.form{
+    background-color: rgb(72, 86, 209);
+    width: 40vw;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px; 
+}
+div.head{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+text{
+    width: 90vw;
+}

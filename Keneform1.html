@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./keneform1.css">
+    <a id="changecolor" idhref="#">changecolor</a>
+    <script src="jquery-3.7.1.slim.js"></script>
+    <window class="ready">callback</window>;
+</head>
+<body>
+    <div class="form">
+        <div class="head">
+            <h1>FOOTBALL MANAGER CLUB</h1>
+        </div>
+        <form>
+            <label for="NAME">NAME</label><br>
+            <input type="text" name="NAME" size="50rem" > <br><br>
+            <label for="DOB">DATE OF BIRTH</label><br>
+            <input type="date" name="NAME"><br><br>
+            <label for="PN">PHONE NUMBER</label><br>
+            <input type="text" size="50rem"><br><br>
+            <label for="Email">EMAIL</label><br>
+            <input type="email" size="50rem"><br><br>
+            <label for="GRADE">MATRIC NUMBER</label><br>
+            <input type="text" size="50rem"><br><br>
+            <label for="How">WHO IS YOUR FAVORITE FOOTBALL COACH AND WHY?</label><br>
+            <input type="text" size="50rem"><br><br>
+            <label for="why">WHY DO YOU WISH TO JOIN THIS CLUB?</label><br>
+            <input type="text" size="50rem"><br><br>
+            <label for="what"> HOW DID YOU HEAR ABOUT THIS CLUB? </label><br>
+            <input type="text" size="50rem"><br><br>
+            <label for="any">ANY PREVIOUS EXPEREINCES IN COACHING?<br>
+                <label for="Yes">YES</label><input type="radio" name="any">
+                <label for="No">NO</label> <input type="radio" name="any">
+            </label><br><br>
+            <label for="consent">ARE YOU WILLING TO SACRIFICE FOR YOUR TEAM?<br>
+                <label for="Yes">YES</label><input type="radio" name="any">
+                <label for="No">NO</label> <input type="radio" name="any">
+            </label> <br><br>
+            <label for="submit"></label>
+            <input class="sub" type="submit" value="SUBMIT">
+
+            <div id="clickme" style="width: 100px; height: 100px; background-color: rgb(19, 17, 18);"></div>
+            <button id="hello">click me</button>
+            <button id="text">Test</button>
+            <script>
+              const browser = $(window)
+              browser.ready(function (){
+                  $("#hello").click(function(){
+                      $("clickme").css("background","red")
+                  })
+              })
+            </script>
+        </form>
+    </div>
+</body>
+</html>
